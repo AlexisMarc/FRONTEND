@@ -298,7 +298,7 @@ ul {
       font: 500 12px/80px "Josefin Sans", sans-serif;
       text-transform: capitalize;
       color: #33353b;
-      padding: 0px;
+      padding: 0px 25px 0px 25px;;
       display: inline-block;
       font-size: 15px; }
       .header_area .navbar .nav .nav-item .nav-link:after {
