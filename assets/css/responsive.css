@@ -20,7 +20,8 @@
     right: -10%;
   }
   .inner-page-banner-section .illustration-img img {
-    width: 75%;
+    width: 600px;
+    height: 500px;
   }
   .choose-us-slider__four .choose-item.style--two {
     padding: 30px 30px;
@@ -195,11 +196,12 @@
     padding-bottom: 50px;
   }
   .inner-page-banner-section .illustration-img {
-    text-align: right;
+    width: 600px;
+    height: 500px;
   }
   .inner-page-banner-section .illustration-img img {
-    width: 65%;
-  }
+    width: 600px;
+    height: 500px;  }
   .inner-page-banner-section {
     padding-top: 275px;
     padding-bottom: 165px;
