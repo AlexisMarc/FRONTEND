@@ -3195,6 +3195,9 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
   position: absolute;
   bottom: 0;
   right: 20%;
+  bottom: 15%;
+  width: 430px;
+  right: 13%;
   text-align: right;
 }
 .illustration-img {
