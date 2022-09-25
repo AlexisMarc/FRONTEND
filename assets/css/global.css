@@ -26,9 +26,9 @@
   border: none;
 }
 .btn-primary {
-  background-image: -moz-linear-gradient( 108deg, rgb(59,38,219) 14%, rgb(123,25,203) 100%);
-  background-image: -webkit-linear-gradient( 108deg, rgb(59,38,219) 14%, rgb(123,25,203) 100%);
-  background-image: -ms-linear-gradient( 108deg, rgb(59,38,219) 14%, rgb(123,25,203) 100%);
+  background-image: -moz-linear-gradient( 108deg, #187c94 14%, #48d4b4 100%);
+  background-image: -webkit-linear-gradient( 108deg, #187c94 14%, #48d4b4 100%);
+  background-image: -ms-linear-gradient( 108deg, #187c94 14%, #48d4b4 100%);
   position: relative;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -45,9 +45,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -moz-linear-gradient( 108deg, rgb(123,25,203) 0%, rgb(59,38,219) 86%);
-  background-image: -webkit-linear-gradient( 108deg, rgb(123,25,203) 0%, rgb(59,38,219) 86%);
-  background-image: -ms-linear-gradient( 108deg, rgb(123,25,203) 0%, rgb(59,38,219) 86%);
+  background-image: -moz-linear-gradient( 108deg, #48d4b4 0%, #187c94 86%);
+  background-image: -webkit-linear-gradient( 108deg, #48d4b4 0%, #187c94 86%);
+  background-image: -ms-linear-gradient( 108deg, #48d4b4 0%, #187c94 86%);
   z-index: -10;
   opacity: 0;
 }
@@ -55,9 +55,9 @@
   opacity: 1;
 }
 .btn-secondary {
-  background-image: -moz-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
+  background-image: -moz-linear-gradient( 90deg,rgb(8, 94, 57) 0%, rgb(47, 138, 99) 33%, rgb(81, 164, 128) 100%);
+  background-image: -webkit-linear-gradient( 90deg,rgb(8, 94, 57) 0%, rgb(47, 138, 99) 33%, rgb(81, 164, 128) 100%);
+  background-image: -ms-linear-gradient( 90deg,rgb(8, 94, 57) 0%, rgb(47, 138, 99) 33%, rgb(81, 164, 128) 100%);
   box-shadow: 0px 5px 5px 0px rgba(228, 91, 45, 0.4);
   position: relative;
   transition: all 0.3s;
@@ -75,9 +75,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -moz-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
+  background-image: -moz-linear-gradient( 90deg,rgb(8, 94, 57) 0%, rgb(47, 138, 99) 33%, rgb(81, 164, 128) 100%);
+  background-image: -webkit-linear-gradient( 90deg,rgb(8, 94, 57) 0%, rgb(47, 138, 99) 33%, rgb(81, 164, 128) 100%);
+  background-image: -ms-linear-gradient( 90deg,rgb(8, 94, 57) 0%, rgb(47, 138, 99) 33%, rgb(81, 164, 128) 100%);
   box-shadow: 0px 5px 5px 0px rgba(228, 91, 45, 0.4);
   z-index: -10;
   opacity: 0;
@@ -144,7 +144,7 @@
   background-color: #4b23d7;
 }
 .video-btn .icon i {
-  background: -webkit-linear-gradient( 108deg, rgb(123,25,203) 0%, rgb(59,38,219) 86%);
+  background: -webkit-linear-gradient( 108deg, #48d4b4 0%, #187c94 86%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 18px;
@@ -477,9 +477,9 @@
   margin-top: 50px;
 }
 .gradient-bg {
-  background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
+  background-image: -moz-linear-gradient( 90deg, #187c94 1%, #48d4b4 100%);
+  background-image: -webkit-linear-gradient( 90deg, #187c94 1%, #48d4b4 100%);
+  background-image: -ms-linear-gradient( 90deg, #187c94 1%, #48d4b4 100%);
 }
 .mt-30 {
   margin-top: 30px;
@@ -505,9 +505,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
+  background-image: -moz-linear-gradient( 90deg, #187c94 1%, #48d4b4 100%);
+  background-image: -webkit-linear-gradient( 90deg, #187c94 1%, #48d4b4 100%);
+  background-image: -ms-linear-gradient( 90deg, #187c94 1%, #48d4b4 100%);
   opacity: 0.902;
 }
 .position-relative {

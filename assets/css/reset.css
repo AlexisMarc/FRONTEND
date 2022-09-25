@@ -10,7 +10,7 @@ font-family: 'Thasadith', sans-serif;
 
 html {
   scroll-behavior: smooth;
-  --main-color: #ff5500;
+  --main-color: rgb(49, 95, 130);
   --heading-font: 'Thasadith', sans-serif;
   --heading-color: #323639;
   --font-color: #35315a;
@@ -85,11 +85,6 @@ a, span {
 img {
   max-width: 100%;
   height: auto;
-}
-.illustration-img{
-  width: 600px;
-  height: 500px;
-  text-align: center;
 }
 ul, ol {
   padding: 0;
