@@ -39,37 +39,6 @@
             <div>G</div>
         </div>
     </div>
-    <!-- preloader end -->
-    <!-- *************************************************************************************************** -->
-    <!-- ------------------------------------------LOGIN-------------------------------------- -->
-    <!-- *************************************************************************************************** -->
-    <!-- signin-area start -->
-    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content bdr-radius">
-                <div class="signin-wrapper">
-                    <div class="signin-wrapper-header text-center">
-                        <div class="logo"><img src="assets/images/elements/logotipo.png" alt="image" width="100px"></div>
-                        <h3 class="title">Login with</h3>
-                        <p>Welcome back, please sign in below</p>
-                    </div>
-                    <form class="signin-form">
-                        <div class="form-group">
-                            <label for="signinEmail">Email*</label>
-                            <input type="email" class="form-control" id="signinEmail" placeholder="Enter your Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="signinPass">Password*</label>
-                            <input type="password" class="form-control" id="signinPass" placeholder="Password">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-hover">Log In</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- signin-area end -->
-
     <!-- *************************************************************************************************** -->
     <!-- ------------------------------------------MENU-------------------------------------- -->
     <!-- *************************************************************************************************** -->
@@ -102,17 +71,190 @@
             </div>
         </div>
     </header>
- <!-- ************************************************************************************************************************ -->
- <!-- ************************************************************************************************************************ -->
-    <!-- ------------------------------------------------CONTENIDO------------------------------------------- -->
+    <div class="modal fade" id="signInModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bdr-radius">
+                <div class="signin-wrapper">
+                    <div class="signin-wrapper-header text-center">
+                        <div class="logo"><img src="assets/images/elements/logotipo.png" alt="image" width="100px">
+                        </div>
+                        <h3 class="title">Login with</h3>
+                        <p>Welcome back, please sign in below</p>
+                    </div>
+                    <form class="signin-form">
+                        <div class="form-group">
+                            <label for="signinEmail">Email*</label>
+                            <input type="email" class="form-control" id="signinEmail" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="signinPass">Password*</label>
+                            <input type="password" class="form-control" id="signinPass" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-hover">Log In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- AQUI -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button id="agregar" class="btn btn-info">Agregar Imagen</button>
+                        </div>
+                        
+                        <div id="dinamic" class="form-group"></div>
+                        <script type="text/javascript">
+                            // Constantes para el div contenedor de los inputs y el botón de agregar
+                            const contenedor = document.querySelector('#dinamic');
+                            const btnAgregar = document.querySelector('#agregar');
+
+                            // Variable para el total de elementos agregados
+                            let total = 1;
+
+                            /**
+                             * Método que se ejecuta cuando se da clic al botón de agregar elementos
+                             */
+                            btnAgregar.addEventListener('click', e => {
+                                let div = document.createElement('div');
+                                if (total==4) {
+                                    
+                                } else {
+                                    div.innerHTML = `<label> Imagen-${total++}:</label> <input type="file" name="imagen" required><button class="btn btn-warning" onclick="eliminar(this)">Eliminar</button>`;
+                                    contenedor.appendChild(div);
+                                }
+                                
+                            })
+
+                            /**
+                             * Método para eliminar el div contenedor del input
+                             * @param {this} e 
+                             */
+                            const eliminar = (e) => {
+                                const divPadre = e.parentNode;
+                                contenedor.removeChild(divPadre);
+                                actualizarContador();
+                            };
+
+                            /**
+                             * Método para actualizar el contador de los elementos agregados
+                            */
+                            const actualizarContador = () => {
+                                let divs = contenedor.children;
+                                total = 1;
+                                for (let i = 0; i < divs.length; i++) {
+                                    divs[i].children[0].innerHTML = "Imagen-"+total++ +":";
+                                }//end for
+                            };
+                        </script>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ************************************************************************************************************************ -->
+    <!-- ************************************************************************************************************************ -->
+    <!-- ------------------------------------------------CONTENIDO------------------------------------------- -->
+    <!-- inner-page-banner-section start -->
+    <section class="inner-page-banner-section gradient-bg">
+        <div class="illustration-img"><img src="assets/images/Save the Earth-bro.png" alt="50%"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="inner-page-content-area">
+                        <h2 class="page-title">Contáctanos</h2>
+                        <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="home-one.html">Home</a></li>
+                                <li class="breadcrumb-item">Contáctanos</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section mt-minus pb-120">
+        <div class="container">
+            <div class="contact-form-area">
+                <!-- inner-page-banner-section end -->
+                <!-- modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Acciones</th>
+                            <th scope="col">Visualización</th>
+                            <th scope="col">Id Usuario</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>12-08-2022</td>
+                            <td><button type="button" class="btn btn-outline-success">Activo</button></td>
+                            <td><button type="button" class="btn btn-outline-info" id="abrireditarpubli">Editar</button>
+                            </td>
+                            <td><button type="button" class="btn btn-outline-dark" id="abrirverpubli">Ver...</button>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
     <!-- ---------------------------------------------FIN-CONTENIDO------------------------------------------- -->
-<!-- ************************************************************************************************************************ -->
-<!-- ************************************************************************************************************************ -->
+    <!-- ************************************************************************************************************************ -->
+    <!-- ************************************************************************************************************************ -->
 
- <!-- *************************************************************************************************** -->
+    <!-- *************************************************************************************************** -->
     <!-- ------------------------------------------FOOTER-------------------------------------- -->
     <!-- *************************************************************************************************** -->
     <!-- footer-section start -->
@@ -139,7 +281,7 @@
                             </ul>
                         </div>
                     </div><!-- footer-widget end -->
-                    
+
                     <div class="col-md-3">
                         <div class="footer-widget">
                             <h3 class="widget-title">legal info</h3>
